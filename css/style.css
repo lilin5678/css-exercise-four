@@ -37,16 +37,9 @@ div {
 }
 
 .preview {
-  height: auto;
-  width: auto;
+  height: 300px;
+  width: 100%;
   background-size: cover;
-}
-/* code added to create two-column design */
-@media screen and (min-width: 575px){
-   div {
-    margin: 1%;
-    width: 48%;
-  }
 }
 
 h1, h3{
@@ -58,4 +51,19 @@ h1, h3{
 h3 {
   font-size: 1.8em;
   font-weight: 300;
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px){
+   .preview{
+    margin: 1%;
+    width: 48%;
+  }
+}
+/* code added to create two-column design */
+@media screen and (min-width: 1024px){
+   .preview{
+    margin: 1%;
+    width: 23%;
+  }
 }
